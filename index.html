@@ -3025,7 +3025,7 @@ function algHTML() {
 
 /* ---------------- page ---------------- */
 function page() {
-  return header('Secant to Tangent', [['#sec-explore', 'Explore'], ['#sec-ex1', 'Example 1'], ['#sec-rate', 'Rates'], ['#sec-algebra', 'Unit 4'], ['#sec-back', 'Back to Paul']]) +
+  return header('Secant to Tangent', [['#sec-explore', 'Explore'], ['#sec-ex1', 'Example 1'], ['#sec-rate', 'Rates'], ['#sec-algebra', 'Unit 4'], ['#sec-back', 'Back to Your Unit']]) +
     '<main id="top">' + hero({ kicker: 'Calculus I · Units 2 and 4', title: 'Secant to Tangent',
       dek: 'Paul’s [Tangent Lines and Rates of Change](' + PAUL_TR + ') estimates the slope of a tangent line from slopes of secant lines in Examples 1 and 2. Move the second point toward the first yourself and watch those slopes settle on one number.' }) +
 
@@ -3049,8 +3049,9 @@ function page() {
     prose('', ['At `h = 0` the slope formula gives `F{0}{0}`, so the values of `h` in the table only get close to 0. Simplifying the formula first shows exactly where the slopes head. Each row opens once the row before it is correct.']) +
     col(blk('alg', algHTML)) +
 
-    sec('sec-back', '', 'Back to Paul', '') +
-    prose('', ['In Unit 2, go back to [Tangent Lines and Rates of Change](' + PAUL_TR + ') and read Rates of Change and Example 2, where Paul explains what a rate of 15 cm³ per hour means. In Unit 4, read [The Definition of the Derivative](' + PAUL_DD + '), where the four rows of section 4 become the definition of `f′(x)`.']) +
+    sec('sec-back', '', 'Back to Your Unit', '') +
+    prose('', ['In Unit 2, return to section 1 of Unit 2: Change and finish Paul’s [Tangent Lines and Rates of Change](' + PAUL_TR + '): Rates of Change and Example 2, where Paul explains what a rate of 15 cm³ per hour means.',
+      'In Unit 4, return to section 2 of Unit 4: Continuity and the Derivative and read Paul’s [The Definition of the Derivative](' + PAUL_DD + '), where the four rows of section 4 here become the definition of `f′(x)`.']) +
     '</main>';
 }
 expose({ rateH: rateH, rateGraph: rateGraph, rreadHTML: rreadHTML, qLabelled: qLabelled, FNS: FNS, HS: HS, HBTN: HBTN, secSlope: secSlope, secGraph: secGraph, hreadHTML: hreadHTML, htableHTML: htableHTML, tanctlHTML: tanctlHTML,
